@@ -14,7 +14,7 @@ def send_mail():
     mail_content = 'hellos this is a sample mail'
     #The mail addresses and password
     sender_address = 'sender123@gmail.com'
-    sender_pass = 'xxxxxxxx'
+    sender_pass = 'xxxxxxxx' # app password configure in gmail
     receiver_address = 'receiver567@gmail.com'
     #Setup the MIME
     message = MIMEMultipart()
