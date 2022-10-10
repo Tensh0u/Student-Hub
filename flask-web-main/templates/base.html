@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='Codesheet.css')}}">
+    <title>PLM Hub</title>
+</head>
+
+<body >
+    <h1 class="centered">PLM Student Hub</h1><hr>
+        <img  src="{{url_for('static', filename='PLM_Seal_BOR-approved_2014.png')}}" alt="PLM_Seal_BOR-approved_2014"
+        width="100" height="100" id="Imageposi" > 
+    </img>
+
+
+ <div class="LoginArea"> 
+<form method="post">
+        <fieldset >
+            <Legend>Log in</Legend>
+             <label for="Email"><b> Email:</b></label>   
+             <input type="email" placeholder="Email" name="L_Email" required>
+
+             <label for="Pword"><b>Password:</label>
+             <input type="password" placeholder="Password" name="L_Pword" required> 
+
+             <button type="submit" id="Login" value="login">Login</button>
+             <button type="button" id="NewAccount" onclick="openPopup()">Register</button>
+            </fieldset>
+        </div>
+    </form>
+                <div class="popup" id="popup">
+                    <form method="post">
+                    <fieldset>
+                        <Legend>Register</Legend>
+                        <button type="button" id="close" onclick="closePopup()">X</button>
+                       
+                        <label for="Email"><b> Email:</b></label>   
+                        <input type="email" placeholder="Email" name="R_Email" id="Email" style="margin-top:10%;" required>
+
+                        <label for="Pword"><b>Password:</label>
+                        <input type="password" placeholder="Password" name="Pword" id="Password" style="margin-top:2%;" required> 
+                        
+                        <label for="ConfirmPword"><b>Confirm Password:</label>
+                        <input type="password" placeholder="Confirm Password" name="ConfirmPword" id="ConfirmPword" style="margin-top:0%;" required>
+                        <button type="submit" id="L_OTP" value="register">Send OTP</button>
+                    </fieldset>
+                </form>
+                </div>
+            
+
+             
+      
+
+ <script>
+    let popup=document.getElementById("popup");
+   
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup(){
+        popup.classList.remove("open-popup");
+        
+    }
+
+
+ </script>
+</body>
+</html>

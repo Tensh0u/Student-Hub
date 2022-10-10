@@ -1,0 +1,53 @@
+
+body
+{
+    background-color:rgb(211, 230, 240);
+    
+    
+}
+
+.OTPF {
+    text-align: center;
+    display: inline-block;
+}
+
+.OTPF fieldset{
+    background-color: rgb(227, 229, 230);
+      border: 5px solid rgb(66, 60, 60);
+      border-radius: 15px;
+      width: 505px;
+      height: 300px;
+      margin-left:70% ;
+      margin-top:20%;
+      padding: 16px;
+      border-style:outset;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+      font-family: "Poppins",sans-serif;
+    }
+
+    .OTPF ::placeholder{
+        color:  rgb(199, 194, 194);
+      }
+      
+      .OTPF legend{
+        font-weight: 100;
+        background-color: rgb(223, 224, 224);
+        border: 3px solid rgb(66, 60, 60);
+        padding: 6px;
+        border-radius: 15px;
+        border-style: outset;
+        font-size: 25px;
+       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+      .OTPF input{
+        border-radius: 15px;
+        width: 400px;
+        height: 50px;
+        padding:20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid rgb(29, 26, 26);
+        box-sizing: border-box;
+        font-family: "Poppins",sans-serif;
+      }
