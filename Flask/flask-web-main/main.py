@@ -32,7 +32,7 @@ def send_mail():
     session.quit()
     print('Mail Sent')
 
-     return redirect(url_for("Test"))
+     return redirect(url_for("test"))
 
 if __name__ == "__main__":
     app.run(debug=True)
